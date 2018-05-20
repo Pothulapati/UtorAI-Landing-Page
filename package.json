@@ -1,0 +1,19 @@
+{
+  "name": "utorai-landing-page",
+  "repository": {
+    "type": "git",
+    "url": "https://utorai.visualstudio.com/_git/utorai-landing-page"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inline-style": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
+  }
+}
