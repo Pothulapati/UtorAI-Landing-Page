@@ -1,0 +1,92 @@
+.primary-nav {
+  position: fixed;
+  height: $nav-height;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  > .logo{
+    height: 34px;
+  }
+
+  > .link, > .btn {
+    font-size: 18px;
+  }
+  
+  > .left{
+    margin-left: 32px;
+  }
+  
+  > .right{
+    margin-left: auto;
+    margin-right: 32px;
+  }
+
+  > .mob-nav-btn {
+    display: none;
+    position: relative;
+
+    span:not(:first-child) {
+      display: block;
+      margin-top: 5px;
+      height: 2px;
+      width: 20px;
+      background-color: $brand-dark-color;
+    }
+
+    span:first-child {
+      display: none;
+    }
+    
+    &.open {
+      span {
+        display: none;
+      }
+
+      span:first-child {
+        display: block;
+        color: $brand-dark-color;
+        font-weight: 400;
+        font-size: 32px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint)
+  {
+    > .logo {
+      height: 24px;
+    }
+
+    > .link, > .btn {
+      display: none;
+    }
+
+    > .mob-nav-btn {
+      display: block;
+    }
+  }
+}
+
+.mobile-nav {
+  padding: $nav-height 0px 30px 0px;
+  height: 100%;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  .link {
+    text-align: center;
+  }
+
+  .link, .btn {
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: $breakpoint) {
+    display: flex;
+  }
+}

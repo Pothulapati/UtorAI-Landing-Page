@@ -1,0 +1,35 @@
+.intro {
+  padding: ($nav-height + 20px) 20px 20px 20px !important;
+  background-color: #F8EFBA;
+
+  > * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  > .hero {
+    padding-top: 50px;
+
+    > .subtitle {
+      padding-bottom: 40px;
+    }
+
+    > .btn {
+      margin: 20px;
+    }
+  }
+
+  > .col > .intro-graphic {
+    height: 600px;
+  }
+
+  @media only screen and (max-width: $breakpoint)
+  {
+    padding-left: 0px;
+    height: 450px;
+
+    > .hero {
+      padding-top: 0px;
+    }
+  }
+}

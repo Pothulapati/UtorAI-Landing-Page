@@ -1,0 +1,123 @@
+.btn {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  &.brand {
+    color: $brand-dark-color;
+    border: 2px solid $brand-dark-color;
+
+    &.static {
+      color: #fff;
+      background-color: $brand-dark-color;
+    }
+  }
+
+  &.brand:hover {
+    color: #fff;
+    background-color: $brand-dark-color;
+  }
+
+  &.white {
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  &.white:hover {
+    color: $brand-dark-color;
+    background-color: #fff;
+  }
+
+  @media only screen and (max-width: $breakpoint) {
+    font-size: 14px;
+  }
+}
+
+.link {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+
+  &.brand {
+    color: $brand-dark-color;
+  }
+
+  &.brand:hover {
+    color: $brand-light-color;
+  }
+
+  &.gray {
+    color: #555;
+  }
+
+  &.gray:hover {
+    color: #000;
+  }
+
+  @media only screen and (max-width: $breakpoint) {
+    font-size: 14px;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 20px;
+  font-size: 60px;
+  font-weight: 700;
+
+  @media only screen and (max-width: $breakpoint) {
+    font-size: 36px;
+  }
+}
+
+.subtitle {
+  margin: 0;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+
+  @media only screen and (max-width: $breakpoint) {
+    font-size: 18px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0px 20px;
+
+  &.contain {
+    max-width: $breakpoint + 200px;
+  }
+
+  > .col {
+    flex: 1;
+    margin: 20px;
+  }
+
+  @media only screen and (max-width: $breakpoint){
+    display: block;
+  }
+}
+
+.card {
+  padding: 10px 30px 30px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+
+  > .card-summary {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  > .card-info {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,15 @@
+.center {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.hidden-in-mobile {
+  @media only screen and (max-width: $breakpoint) {
+    display: none;
+  }
+}

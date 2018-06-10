@@ -6,10 +6,11 @@ html, body{
 
 *{
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-stack;
 }
 
-h1{
-  font-size: 40px;
-  font-weight: 300;
+main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }

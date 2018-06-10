@@ -1,0 +1,39 @@
+.overview {
+  padding-bottom: 50px;
+  background-color: #2f4170/*#4e4ea2*/;
+
+  > .title {
+    font-size: 48px;
+    padding: 20px 50px;
+  }
+
+  > .row {
+    > .btn {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint){
+    > .title {
+      font-size: 24px;
+    }
+
+    > .row {
+
+      > .card {
+        margin: auto;
+        width: 100%;
+  
+        > h1 {
+          font-size: 18px;
+          padding-top: 20px;
+        }
+
+        > p, > .btn {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
