@@ -4,11 +4,11 @@
 
 @import './reset';
 
+@import './helpers';
+@import './components';
+
 @import './sections/nav';
 @import './sections/intro';
 @import './sections/overview';
 @import './sections/pricing';
 @import './sections/footer';
-
-@import './helpers';
-@import './components';

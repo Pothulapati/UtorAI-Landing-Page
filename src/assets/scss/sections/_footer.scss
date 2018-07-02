@@ -5,7 +5,6 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #f1f1f1;
-  border-top: 1px solid #aeaeae;
 
   .logo {
     height: 30px;
@@ -14,5 +13,14 @@
   @media only screen and (max-width: $breakpoint)
   {
     display: block;
+
+    > *{
+      margin: auto;
+      text-align: center;
+    }
+
+    .link {
+      display: block;
+    }
   }
 }

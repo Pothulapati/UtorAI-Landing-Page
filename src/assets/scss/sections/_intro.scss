@@ -7,19 +7,19 @@
     padding: 0;
   }
   
-  > .hero {
+  .hero {
     padding-top: 50px;
 
-    > .subtitle {
+    .subtitle {
       padding-bottom: 40px;
     }
 
-    > .btn {
+    .btn {
       margin: 20px;
     }
   }
 
-  > .col > .intro-graphic {
+  .col .intro-graphic {
     height: 600px;
   }
 
@@ -28,7 +28,7 @@
     padding-left: 0px;
     height: 450px;
 
-    > .hero {
+    .hero {
       padding-top: 0px;
     }
   }

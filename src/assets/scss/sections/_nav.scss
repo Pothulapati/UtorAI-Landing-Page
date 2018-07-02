@@ -2,29 +2,30 @@
   position: fixed;
   height: $nav-height;
   width: 100%;
-  background-color: #fff;
+  background: #fff;
+  border-bottom: 1px solid #aeaeae;
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  > .logo{
+  .logo{
     height: 34px;
   }
 
-  > .link, > .btn {
+  .link, .btn {
     font-size: 18px;
   }
   
-  > .left{
+  .left{
     margin-left: 32px;
   }
   
-  > .right{
+  .right{
     margin-left: auto;
     margin-right: 32px;
   }
 
-  > .mob-nav-btn {
+  .mob-nav-btn {
     display: none;
     position: relative;
 
@@ -56,15 +57,15 @@
 
   @media only screen and (max-width: $breakpoint)
   {
-    > .logo {
+    .logo {
       height: 24px;
     }
 
-    > .link, > .btn {
+    .link, .btn {
       display: none;
     }
 
-    > .mob-nav-btn {
+    .mob-nav-btn {
       display: block;
     }
   }
